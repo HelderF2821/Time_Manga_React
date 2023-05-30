@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainScreen.css'; // Importe le fichier CSS pour cette page
+import './MainScreen.css';
 
 const MainScreen = () => {
   return (

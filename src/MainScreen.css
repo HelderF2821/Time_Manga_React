@@ -9,8 +9,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligne les éléments sur le côté gauche */
-  justify-content: flex-start; /* Centre les éléments en haut de l'écran */
+  align-items: flex-start; 
   overflow: auto; /* Ajoute le défilement vertical uniquement si nécessaire */
 }
 
@@ -46,7 +45,7 @@ header {
   padding-left: 1rem;
   color: #fff;
   width: 100%;
-  text-align: left; /* Aligne le texte sur le côté gauche */
+  text-align: left; 
 }
 
 h1 {
@@ -58,7 +57,7 @@ h1 {
 .search-bar {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Aligne les éléments sur le côté gauche */
+  justify-content: flex-start;
   width: 85%;
 }
 
