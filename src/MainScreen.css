@@ -1,0 +1,90 @@
+/* Styles spécifiques pour MainScreen.js */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #282836;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne les éléments sur le côté gauche */
+  justify-content: flex-start; /* Centre les éléments en haut de l'écran */
+  overflow: auto; /* Ajoute le défilement vertical uniquement si nécessaire */
+}
+
+.slidemenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #282836;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 16px;
+  width: 10%;
+}
+
+.logo {
+  width: 15rem;
+  height: 5rem;
+}
+
+.search-section {
+  padding-left: 1rem;
+  color: #fff;
+  width: 100%;
+  text-align: left; /* Aligne le texte sur le côté gauche */
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligne les éléments sur le côté gauche */
+  width: 85%;
+}
+
+input[type='text'] {
+  height: 1rem;
+  padding: 0.5rem;
+  background-color: #1f1f2e;
+  font-size: 14px;
+  border-radius: 20%;
+}
+
+.settings {
+  margin-left: 16px;
+  height: 2rem;
+  width: 2rem;
+}
+
+footer {
+  height: 60px;
+  background-color: #282836;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
