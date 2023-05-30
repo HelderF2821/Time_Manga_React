@@ -11,14 +11,8 @@ const MainScreen = () => {
         <section className="search-section">
             <h1>Recherchez un Manga</h1>
             <div className="search-bar">
-            <input type="text" placeholder="Cherche un Manga" />
-            <img src={require('./settings.png')} alt="Settings" className="settings" />
-            </div>
+            <input type="text" placeholder="Cherche un Manga" /></div>
         </section>
-        {/* Reste du contenu */}
-        <footer> 
-            {/* Navigation inférieure */}
-        </footer>
       </div>
     </div>
   );
