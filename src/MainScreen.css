@@ -1,5 +1,5 @@
 /* Styles spécifiques pour MainScreen.js */
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   overflow: auto; /* Ajoute le défilement vertical uniquement si nécessaire */
 }
 
@@ -18,7 +18,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 11%;
+  width: 240px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,31 +26,31 @@
   overflow: auto;
 }
 
-
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  padding: 16px;
+  justify-content: flex-start;
+  padding: 1rem;
 }
 
 .logo {
   width: 100%;
-  height: 3rem;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
 
 .search-section {
   padding-left: 0.75rem;
   color: #fff;
-  width: 90%;
-  text-align: left; 
+  text-align: left;
 }
 
 h1 {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 0.70rem;
-  margin-top: 0.4rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+  color: #FF7F00
 }
 
 .search-bar {
@@ -63,14 +63,105 @@ input[type='text'] {
   height: 0.5rem;
   width: 10rem;
   padding: 0.5rem;
+  margin-left: 0.8rem;
+  margin-top: 0.4rem;
   background-color: #121217;
-  font-size: 1rem;
+  border: 1px solid #353535;
+  font-size: 0.9rem;
   border-radius: 50px;
   border-style: none;
 }
 
-.settings {
-  margin-left: 16px;
-  height: 2rem;
-  width: 2rem;
+#menu {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FF7F00;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff0000;
+}
+
+.menu i {
+  margin-right: 0.5rem;
+}
+
+.menu span {
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .slidemenu {
+    position: static;
+    width: 100%;
+    height: 120px;
+    overflow: visible;
+  }
+
+  h1 {
+    margin-right: 2rem;
+  }
+
+  #menu {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .search-bar {
+    margin-right: 1rem;
+  }
+}
+
+/* Ajouter ces styles pour la navigation horizontale */
+@media (max-width: 650px) {
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu li {
+    margin-bottom: 0;
+  }
+
+  .menu a {
+    margin: 0 0.5rem;
+  }
 }
